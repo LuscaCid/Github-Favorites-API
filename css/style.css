@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+:root{
+    font-size: 62.5%;
+}
+.content{
+    width: min(50rem, 90%)
+}
+#app{
+    margin-top: -10rem;
+    display: grid;
+    height: 100vh;
+    place-content: center;
+    
+}
+header{
+   
+    margin: 0 2rem;
+    font-size: 2.2rem;
+    gap: 1.5rem;
+    width: min(100%,94%);
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 2rem .3rem;
+
+}
+.sr-only{
+    position: absolute;
+    margin: -1rem;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+thead{
+    text-align: left;
+    color: white;
+    background: #74bbfb;
+}
+table{
+    margin: 0 2rem;
+    border-collapse: collapse;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+th:first-child{
+    border-radius: .8rem 0 0 0;
+}
+th:last-child{
+    border-radius: 0 0.8rem 0 0;
+}
+th,td{
+
+    font-size: 1.5rem;
+    padding:  1rem 1.2rem;
+}
+tbody tr:nth-child(even){
+    background: rgb(223, 221, 221);
+}
+tbody tr:nth-child(odd){
+    background: rgb(240, 238, 238);
+}
+.user{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.user img{
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+}
+.input-wrapper{
+    display: flex;
+    
+}
+.input-wrapper input{
+    font-family: 'Poppins', sans-serif;
+    padding: 1rem 1rem;
+    border-radius: .8rem 0 0 .8rem;
+    border: none;
+    background: rgb(221, 221, 221)
+}
+.input-wrapper button{
+    border: none;
+    background:#74bbfb;
+    padding: 0 1rem;
+    border-radius: 0 0.8rem .8rem 0;
+    cursor: pointer;
+
+}
+.input-wrapper button:hover{
+    filter: brightness(.94);
+}
+td button{
+    background: none;
+    color: red;
+    border: none;
+    font-size:1.5rem;
+    cursor: pointer;
+    transition: transform 0.4s, rotate 0.4s;
+}
+td button:hover{
+    transform: scale(1.6) rotate(180deg);
+}
+tbody{
+    box-shadow: 0 1rem 2rem -1rem  rgb(0,0,0, 0.3);
+}

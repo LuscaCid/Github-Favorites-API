@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github fav</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js" type="module" defer></script>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Github Favorites</h1>
+            <div class="input-wrapper">
+                <label class="sr-only" for="input-search">Nome do usuario</label>
+                <input type="text" id="input-search" placeholder="Usuário">
+                <button id="button-search">&plus;</button>
+            </div>
+        </header>
+        <table>
+            <thead>
+                <tr>
+                    <th>Usuário</th>
+                    <th>Repositórios</th>
+                    <th>seguidores</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                    <td class="user">
+                        
+                        <img src="https://github.com/pedro.png" alt="imagem de lucas cid">
+                        <a href="https://github.com/pedro" target="_blank">
+                            <p>Lucas Cid</p>
+                            <span>luscacid</span>
+                        </a>
+                    </td>
+                    <td id="repositories">303</td>
+                    <td id="followers">9330</td>
+                    <td><button class="remove-element">&times;</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+o querySelectorAll retorna um node list eh como se fosse um array, pq ele vai no html e vai pegar todos os elementos presentes naquela tag, classe ou id que eh especificado
